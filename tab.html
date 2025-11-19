@@ -15,6 +15,22 @@ body{
   color: #fff;
   font-family: system-ui;
 }
+/* ADD VERLAG BOLD FONT */
+@font-face {
+  font-family: 'Verlag Bold';
+  src: url('Verlag-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* APPLY TO EVERYTHING */
+body, button, h1, h4, p, div, span {
+  font-family: 'Verlag Bold' !important;
+}
+/* MAKE ALL LETTERS CAPITAL
+body, button, h1, h4, p, div, span {
+  text-transform: uppercase !important;
+} */
+
 .app-page{display:none; height:100vh; width:100vw; align-items:center; justify-content:center; position:relative; background-size:cover; background-position:center; background-repeat:no-repeat;}
 .app-page.active{display:flex; flex-direction:column;}
 .panel{
@@ -59,12 +75,12 @@ body{
   height: 80%;
   font-size:30px;
   margin:10px 0;
-  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  background: linear-gradient(135deg, #103167);
   color:#fff;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .answer-btn.selected{
-  box-shadow:0 0 18px rgba(124,58,237,0.4);
+  box-shadow:0 0 18px #E9CDD6;
   transform:scale(1.03);
 }
 #nextBtn{
